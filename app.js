@@ -40,4 +40,4 @@ for (var i = 0; i < listaCognomi.length; i++){
 }
 
 //mostro posizione cognome utente
-output.innerHTML = "La posizione del cognome inserito è: " + listaCognomi.indexOf(cognome);
+output.innerHTML = "La posizione del cognome inserito è: " + (listaCognomi.indexOf(cognome)+ 1);
