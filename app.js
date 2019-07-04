@@ -24,6 +24,12 @@ cognome = prompt("insierisci il tuo cognome...");
 //inserisco cognome utente in lista
 listaCognomi.push(cognome);
 
+
+//metto maiuscola ai cognomi
+ for (var i = 0; i < listaCognomi.length; i++){
+  listaCognomi[i] = listaCognomi[i].toUpperCase();
+} 
+
 //ordino i cognomi
 listaCognomi.sort();
 
@@ -36,7 +42,7 @@ for (var i = 0; i < listaCognomi.length; i++){
   listLabel.innerHTML = tempList + "<li>" + listaCognomi[i] + "</li>";
 
   //salvo il nuovo stato di listLabel
-  tempList = tempList = listLabel.innerHTML;
+  tempList =  listLabel.innerHTML;
 }
 
 //mostro posizione cognome utente
