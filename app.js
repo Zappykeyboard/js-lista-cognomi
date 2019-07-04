@@ -42,8 +42,8 @@ for (var i = 0; i < listaCognomi.length; i++){
   listLabel.innerHTML = tempList + "<li>" + listaCognomi[i] + "</li>";
 
   //salvo il nuovo stato di listLabel
-  tempList =  listLabel.innerHTML;
+  tempList = listLabel.innerHTML;
 }
 
 //mostro posizione cognome utente
-output.innerHTML = "La posizione del cognome inserito è: " + (listaCognomi.indexOf(cognome)+ 1);
+output.innerHTML = "La posizione del cognome inserito è: " + (listaCognomi.indexOf(cognome.toUpperCase())+ 1);
